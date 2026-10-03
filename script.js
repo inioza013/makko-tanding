@@ -1,0 +1,1 @@
+document.getElementById('menu').onclick=()=>document.querySelector('header').classList.toggle('open');
