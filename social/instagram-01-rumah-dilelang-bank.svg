@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050505"/><stop offset=".55" stop-color="#17130b"/><stop offset="1" stop-color="#050505"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8b5a00"/><stop offset=".45" stop-color="#ffd86a"/><stop offset="1" stop-color="#9a6500"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#d9a52b" stop-opacity=".25"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1080" height="1080" fill="url(#bg)"/>
+<circle cx="850" cy="420" r="390" fill="url(#glow)"/>
+<path d="M40 60L1020 1020M180 0L1080 900M0 300L780 1080" stroke="#7b5a20" stroke-opacity=".12" stroke-width="3"/>
+<rect x="36" y="36" width="1008" height="1008" rx="12" fill="none" stroke="url(#gold)" stroke-width="4"/>
+<text x="72" y="100" fill="#f4c957" font-family="Georgia,serif" font-size="34" font-weight="bold">KANTOR HUKUM</text>
+<text x="72" y="150" fill="#fff7df" font-family="Georgia,serif" font-size="52" font-weight="bold">MAKKO TANDING</text>
+<text x="72" y="190" fill="#f4c957" font-family="Georgia,serif" font-size="24">ADVOKAT &amp; KONSULTAN HUKUM</text>
+<text x="72" y="226" fill="#d8b45a" font-family="Georgia,serif" font-size="22" font-style="italic">Berjuang untuk Keadilan dan Kebenaran</text>
+<line x1="72" y1="258" x2="650" y2="258" stroke="url(#gold)" stroke-width="2"/>
+<text x="72" y="350" fill="#ffffff" font-family="Georgia,serif" font-size="58" font-weight="bold">RUMAH AKAN</text>
+<text x="72" y="425" fill="url(#gold)" font-family="Georgia,serif" font-size="82" font-weight="bold">DILELANG</text>
+<text x="72" y="500" fill="url(#gold)" font-family="Georgia,serif" font-size="82" font-weight="bold">BANK?</text>
+<text x="76" y="548" fill="#fff" font-family="Arial,sans-serif" font-size="30" font-weight="bold">Jangan langsung panik.</text>
+<text x="76" y="595" fill="#e8e8e8" font-family="Arial,sans-serif" font-size="23">Periksa terlebih dahulu dokumen kredit,</text>
+<text x="76" y="630" fill="#e8e8e8" font-family="Arial,sans-serif" font-size="23">hak tanggungan, pemberitahuan lelang,</text>
+<text x="76" y="665" fill="#e8e8e8" font-family="Arial,sans-serif" font-size="23">dan proses pelaksanaan lelang.</text>
+<g transform="translate(790 430)">
+ <path d="M-150 145 L150 145 L100 90 L-100 90 Z" fill="#3b2615" stroke="#d8a83e" stroke-width="4"/>
+ <circle cx="0" cy="30" r="55" fill="#6e4320" stroke="#f2c45a" stroke-width="5"/>
+ <rect x="-180" y="-15" width="360" height="38" rx="12" fill="#5a3218" stroke="#f2c45a" stroke-width="5" transform="rotate(-18)"/>
+ <text x="0" y="200" text-anchor="middle" fill="#f4c957" font-family="Georgia,serif" font-size="30" font-weight="bold">LELANG</text>
+</g>
+<g transform="translate(72 735)">
+ <rect width="936" height="150" rx="18" fill="#0a0a0a" stroke="url(#gold)" stroke-width="3"/>
+ <text x="35" y="48" fill="#f4c957" font-family="Arial,sans-serif" font-size="24" font-weight="bold">PERIKSA 4 HAL PENTING</text>
+ <text x="35" y="88" fill="#fff" font-family="Arial,sans-serif" font-size="20">1. Dokumen kredit   2. Hak tanggungan   3. Pemberitahuan lelang   4. Prosedur pelaksanaan</text>
+ <text x="35" y="125" fill="#d9d9d9" font-family="Arial,sans-serif" font-size="18">Jangan hadapi masalah ini sendirian. Konsultasikan sebelum mengambil langkah hukum.</text>
+</g>
+<text x="72" y="945" fill="#f4c957" font-family="Arial,sans-serif" font-size="20">WhatsApp 0895328696545  •  Yogyakarta, Sleman, DIY  •  Layanan 24 Jam</text>
+<text x="540" y="1000" text-anchor="middle" fill="#f4c957" font-family="Georgia,serif" font-size="24" letter-spacing="5">BERJUANG UNTUK KEADILAN DAN KEBENARAN</text>
+</svg>
