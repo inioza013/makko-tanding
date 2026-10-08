@@ -243,3 +243,112 @@ header .brand{
 .page-hero .banner-logo-large:after{content:"";position:absolute;left:50%;bottom:-18px;width:70px;height:1px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,var(--gold2),transparent)}
 @media(max-width:760px){.page-hero .banner-logo-large{width:min(270px,58vw);margin-bottom:28px}.page-hero .banner-logo-large img{max-height:190px}}
 @media(max-width:560px){.page-hero .banner-logo-large{width:min(230px,62vw);margin-bottom:24px}.page-hero .banner-logo-large img{max-height:160px}}
+
+
+/* FINAL BANNER LOGO — CENTERED INSIDE CIRCLE */
+.page-hero{
+  align-items:center;
+}
+.page-hero>div{
+  width:100%;
+  max-width:980px;
+  text-align:center;
+}
+.page-hero .banner-logo-large{
+  position:relative;
+  z-index:3;
+  width:330px;
+  height:330px;
+  margin:0 auto 30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(234,210,139,.72);
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 50% 45%,rgba(234,210,139,.12),rgba(4,4,3,.22) 58%,rgba(0,0,0,.42) 100%);
+  box-shadow:
+    0 0 0 10px rgba(234,210,139,.035),
+    0 0 0 1px rgba(234,210,139,.08),
+    0 0 70px rgba(198,160,74,.14),
+    inset 0 0 70px rgba(234,210,139,.08);
+}
+.page-hero .banner-logo-large:before{
+  content:"";
+  position:absolute;
+  inset:15px;
+  border:1px solid rgba(234,210,139,.18);
+  border-radius:50%;
+  pointer-events:none;
+}
+.page-hero .banner-logo-large img{
+  position:relative;
+  z-index:2;
+  display:block!important;
+  width:76%;
+  height:76%;
+  max-height:none;
+  object-fit:contain;
+  opacity:1!important;
+  filter:
+    drop-shadow(0 12px 25px rgba(0,0,0,.58))
+    drop-shadow(0 0 22px rgba(210,175,85,.20));
+}
+.page-hero .banner-logo-large:after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:-18px;
+  width:72px;
+  height:1px;
+  transform:translateX(-50%);
+  background:linear-gradient(90deg,transparent,var(--gold2),transparent);
+}
+.page-hero .label{
+  justify-content:center;
+}
+.page-hero h1{
+  text-align:center;
+}
+.page-hero p{
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+@media(max-width:760px){
+  .page-hero .banner-logo-large{
+    width:270px;
+    height:270px;
+    margin-bottom:26px;
+  }
+  .page-hero .banner-logo-large img{
+    width:75%;
+    height:75%;
+  }
+}
+@media(max-width:560px){
+  .page-hero{
+    align-items:center;
+    padding-top:120px;
+    padding-bottom:65px;
+  }
+  .page-hero .banner-logo-large{
+    width:225px;
+    height:225px;
+    margin-bottom:23px;
+  }
+  .page-hero .banner-logo-large img{
+    width:74%;
+    height:74%;
+  }
+  .page-hero .banner-logo-large:before{
+    inset:11px;
+  }
+  .page-hero .banner-logo-large:after{
+    bottom:-14px;
+    width:48px;
+  }
+  .page-hero .label{
+    justify-content:center;
+  }
+}
