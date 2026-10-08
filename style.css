@@ -700,3 +700,110 @@ header .brand img{
     line-height:.97!important;
   }
 }
+
+
+/* FIELD ACTIVITIES — EDITORIAL GALLERY */
+.field-activities{
+  position:relative;
+  padding:120px 8% 130px;
+  background:
+    radial-gradient(circle at 85% 15%,rgba(234,210,139,.06),transparent 30%),
+    #090908;
+  color:#f2eee5;
+}
+.field-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:60px;
+  max-width:1180px;
+  margin:0 auto 48px;
+}
+.field-head .eyebrow{
+  display:block;
+  margin-bottom:18px;
+  color:#cdb36b;
+  font-family:var(--sans);
+  font-size:8px;
+  font-weight:700;
+  letter-spacing:3px;
+}
+.field-head h2{
+  margin:0;
+  font-family:var(--ser);
+  font-size:clamp(48px,6vw,84px);
+  font-weight:500;
+  line-height:.9;
+  letter-spacing:-2px;
+}
+.field-head h2 em{
+  color:#ead28b;
+  font-style:italic;
+}
+.field-head p{
+  max-width:370px;
+  margin:0 0 4px;
+  color:#98948a;
+  font-size:11px;
+  line-height:1.8;
+}
+.field-feature{
+  max-width:1180px;
+  margin:auto;
+}
+.field-feature figure{
+  position:relative;
+  margin:0;
+  overflow:hidden;
+  background:#11110f;
+  border:1px solid rgba(234,210,139,.16);
+}
+.field-feature img{
+  display:block;
+  width:100%;
+  height:min(680px,68vw);
+  min-height:420px;
+  object-fit:cover;
+  object-position:center 42%;
+  filter:grayscale(.08) contrast(1.04) saturate(.88);
+}
+.field-feature figure:after{
+  content:"";
+  position:absolute;
+  inset:45% 0 0;
+  background:linear-gradient(180deg,transparent,rgba(0,0,0,.82));
+  pointer-events:none;
+}
+.field-feature figcaption{
+  position:absolute;
+  z-index:2;
+  left:38px;
+  right:38px;
+  bottom:30px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:30px;
+}
+.field-feature figcaption span{
+  color:#ead28b;
+  font-family:var(--sans);
+  font-size:7px;
+  font-weight:700;
+  letter-spacing:2.6px;
+}
+.field-feature figcaption strong{
+  color:#f4f0e8;
+  font-family:var(--ser);
+  font-size:clamp(20px,2.4vw,32px);
+  font-weight:500;
+}
+@media(max-width:700px){
+  .field-activities{padding:85px 22px 90px}
+  .field-head{display:block;margin-bottom:30px}
+  .field-head h2{font-size:48px}
+  .field-head p{margin-top:24px}
+  .field-feature img{height:520px;min-height:0}
+  .field-feature figcaption{left:22px;right:22px;bottom:22px;display:block}
+  .field-feature figcaption strong{display:block;margin-top:9px;font-size:24px}
+}
