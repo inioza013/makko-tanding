@@ -42,3 +42,43 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold2);outline-offs
   html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}
   *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+
+
+/* PREMIUM BLACK LUXURY OVERRIDES — MAKKO TANDING */
+body{
+  background:
+    radial-gradient(circle at 15% 5%,rgba(198,160,74,.045),transparent 28%),
+    radial-gradient(circle at 88% 22%,rgba(198,160,74,.035),transparent 25%),
+    linear-gradient(135deg,#0a0a09,#050505 48%,#0b0b09);
+  color:#e8e4da;
+}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.035;background:linear-gradient(115deg,transparent 0 48%,rgba(255,255,255,.8) 49%,transparent 50%);background-size:420px 420px}
+header{background:rgba(4,4,3,.88);border-bottom:1px solid rgba(234,210,139,.20);box-shadow:0 14px 45px rgba(0,0,0,.30)}
+.page-hero{min-height:64vh;position:relative;isolation:isolate;background:linear-gradient(90deg,rgba(2,2,2,.96),rgba(4,4,3,.70) 52%,rgba(4,4,3,.58)),radial-gradient(circle at 75% 35%,rgba(198,160,74,.15),transparent 28%),url("https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=2200&q=90") center/cover;border-bottom:1px solid rgba(234,210,139,.16)}
+.page-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 40%,#070706 100%)}
+.page-section{position:relative;background:radial-gradient(circle at 90% 10%,rgba(198,160,74,.055),transparent 24%),linear-gradient(135deg,#0b0b0a,#070706 55%,#0c0c0a);border-bottom:1px solid rgba(234,210,139,.08)}
+.page-section:before,.section:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.035;background:linear-gradient(120deg,transparent 0 48%,#fff 49%,transparent 50%),linear-gradient(300deg,transparent 0 48%,#fff 49%,transparent 50%);background-size:520px 520px}
+.page-grid,.card-grid,.article-grid,.contact-detail{position:relative;z-index:1}
+.page-grid h2,.page-grid h3,.page-section h1,.page-section h2,.page-section h3,.page-section p,.page-section li,.contact-detail strong{color:inherit}
+.card-grid{gap:1px;background:linear-gradient(135deg,#8f6c25,rgba(234,210,139,.10),#211a0d);box-shadow:0 25px 70px rgba(0,0,0,.24)}
+.dark-card{background:radial-gradient(circle at 85% 10%,rgba(198,160,74,.09),transparent 30%),linear-gradient(145deg,#11110f,#080807 65%,#0e0e0c);border:0;position:relative;overflow:hidden}
+.dark-card:after{content:"";position:absolute;left:0;top:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,#c6a04a,transparent);opacity:.7}
+.dark-card p{color:#9a968b}
+.article-grid{gap:16px}
+.article-card{background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015)),linear-gradient(145deg,#141411,#0a0a09);color:#e9e5db;border:1px solid rgba(234,210,139,.14);box-shadow:0 18px 55px rgba(0,0,0,.22);transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.article-card:hover{transform:translateY(-6px);border-color:rgba(234,210,139,.38);box-shadow:0 25px 70px rgba(0,0,0,.34),0 0 30px rgba(198,160,74,.06)}
+.article-card h2{color:#f0ece2}.article-card p{color:#98948a}
+.section{position:relative;background:radial-gradient(circle at 12% 12%,rgba(198,160,74,.045),transparent 25%),linear-gradient(135deg,#f0ece2,#e8e2d5);color:#191813}
+.section .display,.section h1,.section h2,.section h3{color:#171611}
+.section .copy .large,.section .copy p:not(.large),.section .team-heading>p:last-child{color:#666158}
+.feature-photo{border-top:1px solid rgba(234,210,139,.18);border-bottom:1px solid rgba(234,210,139,.18)}
+.practice{background:radial-gradient(circle at 82% 20%,rgba(198,160,74,.07),transparent 25%),linear-gradient(135deg,#070706,#0d0d0b 55%,#050504)}
+.quote{background:radial-gradient(circle at 50% 0,rgba(198,160,74,.12),transparent 32%),linear-gradient(135deg,#151410,#0a0a09);color:#e9e4d8;border-color:rgba(234,210,139,.18)}
+.quote blockquote{color:#eee9dd}
+.home-team{background:radial-gradient(circle at 80% 15%,rgba(198,160,74,.05),transparent 28%),linear-gradient(135deg,#0d0d0b,#070706);color:#eee}
+footer{background:radial-gradient(circle at 80% 0,rgba(198,160,74,.06),transparent 25%),#030302;border-top:1px solid rgba(234,210,139,.18)}
+.gold-line{height:2px}
+.btn{background:linear-gradient(135deg,#f0d88d,#b78932);color:#080806;border:1px solid rgba(255,244,194,.45);box-shadow:0 12px 35px rgba(198,160,74,.18)}
+.contact-detail div{border-color:rgba(234,210,139,.13)}
+.wa{background:linear-gradient(135deg,#f0d88d,#b78932);box-shadow:0 15px 40px rgba(0,0,0,.45),0 0 20px rgba(198,160,74,.15)}
+@media(max-width:560px){.page-hero{min-height:62vh;background-position:center}.page-section{padding-top:78px;padding-bottom:78px}.article-card:hover{transform:none}}
