@@ -131,3 +131,62 @@ footer .footer-nav a:hover{color:var(--gold2)}
 .page-hero:before{border-color:rgba(234,210,139,.18);box-shadow:0 0 0 28px rgba(234,210,139,.018),0 0 90px rgba(198,160,74,.06),inset 0 0 100px rgba(234,210,139,.04)}
 @media(max-width:900px){.building-photo{background-position:58% center}.vignette{background:linear-gradient(90deg,rgba(2,2,2,.96),rgba(3,3,2,.73)),radial-gradient(circle at 80% 40%,rgba(198,160,74,.12),transparent 25%)}.hero-emblem{right:-6%;top:28%;width:52vw}.page-hero{background-position:62% center}}
 @media(max-width:560px){.building-photo{background-position:65% center;filter:grayscale(100%) contrast(120%) brightness(25%)}.cinema:after{opacity:.7}.hero-content:before{width:52px;margin-bottom:18px}.cinema h1{font-size:clamp(48px,14vw,56px)}.hero-emblem{right:-30%;top:35%;width:82vw;opacity:.09}.page-hero{background-position:65% center}.page-hero h1{font-size:clamp(48px,14vw,56px)}}
+
+
+/* ACCESSIBILITY CONTRAST FIX — LIGHT/DARK SECTIONS */
+.page-section[style*="#f5f1e8"],
+.page-section[style*="#eee8dc"]{
+  color:#24231e !important;
+  background:#eee8dc !important;
+}
+.page-section[style*="#f5f1e8"] h1,
+.page-section[style*="#f5f1e8"] h2,
+.page-section[style*="#f5f1e8"] h3,
+.page-section[style*="#eee8dc"] h1,
+.page-section[style*="#eee8dc"] h2,
+.page-section[style*="#eee8dc"] h3{
+  color:#171611 !important;
+}
+.page-section[style*="#f5f1e8"] p,
+.page-section[style*="#eee8dc"] p,
+.page-section[style*="#f5f1e8"] li,
+.page-section[style*="#eee8dc"] li{
+  color:#514e46 !important;
+}
+.page-section[style*="#f5f1e8"] .label,
+.page-section[style*="#eee8dc"] .label{
+  color:#8a6824 !important;
+}
+.page-section[style*="#f5f1e8"] a:not(.btn),
+.page-section[style*="#eee8dc"] a:not(.btn){
+  color:#80601d !important;
+  border-color:rgba(128,96,29,.35);
+}
+.page-section[style*="#0b0b09"],
+.page-section[style*="#070706"]{
+  color:#eee9df !important;
+}
+.page-section[style*="#0b0b09"] h1,
+.page-section[style*="#0b0b09"] h2,
+.page-section[style*="#0b0b09"] h3,
+.page-section[style*="#070706"] h1,
+.page-section[style*="#070706"] h2,
+.page-section[style*="#070706"] h3{
+  color:#f2eee5 !important;
+}
+.page-section[style*="#0b0b09"] p,
+.page-section[style*="#070706"] p{
+  color:#aaa69c !important;
+}
+.page-section[style*="#0b0b09"] .label,
+.page-section[style*="#070706"] .label{
+  color:#ead28b !important;
+}
+.page-section[style*="#0b0b09"] a:not(.btn),
+.page-section[style*="#070706"] a:not(.btn){
+  color:#ead28b !important;
+}
+.article-card a,
+.dark-card a{color:#ead28b !important}
+.contact-detail strong{color:#f0ece2 !important}
+.page-hero p{color:#d0cbc0 !important}
