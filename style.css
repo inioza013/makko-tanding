@@ -518,3 +518,41 @@ header .brand{
   .article-card:before{left:24px}
   .article-card h2{font-size:31px!important;max-width:16ch}
 }
+
+
+/* FINAL — INSIGHTS TITLE ALIGNMENT */
+.article-card{
+  min-height:365px!important;
+  padding:32px 30px 28px!important;
+}
+.article-card small{
+  min-height:20px;
+}
+.article-card h2{
+  height:108px!important;
+  min-height:108px!important;
+  max-width:none!important;
+  margin:20px 0 15px!important;
+  font-size:31px!important;
+  line-height:1.02!important;
+  letter-spacing:-.25px!important;
+  display:block!important;
+  overflow:hidden!important;
+  text-wrap:pretty;
+}
+.article-card p{
+  min-height:38px;
+  margin-bottom:24px!important;
+}
+.article-card a{
+  line-height:1!important;
+}
+@media(max-width:900px){
+  .article-card{min-height:345px!important;padding:29px 27px 26px!important}
+  .article-card h2{height:100px!important;min-height:100px!important;font-size:29px!important}
+}
+@media(max-width:560px){
+  .article-card{min-height:300px!important;padding:27px 23px 24px!important}
+  .article-card h2{height:auto!important;min-height:0!important;font-size:30px!important;line-height:1!important;margin:19px 0 14px!important}
+  .article-card p{min-height:0}
+}
