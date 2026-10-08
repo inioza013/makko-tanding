@@ -82,3 +82,33 @@ footer{background:radial-gradient(circle at 80% 0,rgba(198,160,74,.06),transpare
 .contact-detail div{border-color:rgba(234,210,139,.13)}
 .wa{background:linear-gradient(135deg,#f0d88d,#b78932);box-shadow:0 15px 40px rgba(0,0,0,.45),0 0 20px rgba(198,160,74,.15)}
 @media(max-width:560px){.page-hero{min-height:62vh;background-position:center}.page-section{padding-top:78px;padding-bottom:78px}.article-card:hover{transform:none}}
+
+/* STAGE NEXT — INTERNATIONAL LAW FIRM SUBPAGE FINISH */
+.page-hero{min-height:68vh;padding-top:180px;overflow:hidden}
+.page-hero>div{position:relative;z-index:2;max-width:900px}
+.page-hero:before{content:"";position:absolute;inset:18% 7% auto auto;width:28vw;height:28vw;max-width:430px;max-height:430px;border:1px solid rgba(234,210,139,.12);border-radius:50%;box-shadow:0 0 0 35px rgba(234,210,139,.018),inset 0 0 90px rgba(234,210,139,.035);pointer-events:none}
+.page-hero .label{display:flex;align-items:center;gap:14px}
+.page-hero .label:before{content:"";width:38px;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
+.page-hero h1{letter-spacing:-2px;text-shadow:0 8px 35px rgba(0,0,0,.35)}
+.page-section{overflow:hidden}
+.page-section>div{max-width:1180px}
+.page-section .label{margin-bottom:18px}
+.page-section h2{font:500 clamp(38px,4.5vw,64px)/.95 var(--ser);letter-spacing:-.7px;margin:18px 0 24px}
+.page-section a:not(.btn){color:var(--gold2);border-bottom:1px solid rgba(234,210,139,.28);padding-bottom:2px}
+.page-grid>div:first-child{position:relative}
+.page-grid>div:first-child:after{content:"";display:block;width:70px;height:1px;background:var(--gold);margin-top:28px;opacity:.7}
+.dark-card{min-height:285px;padding:42px 38px}
+.dark-card small{color:var(--gold);letter-spacing:3px;font-weight:700}
+.dark-card h2{letter-spacing:-.5px}
+.dark-card:hover{transform:translateY(-4px);box-shadow:0 22px 55px rgba(0,0,0,.3)}
+.article-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.article-card{min-height:315px;padding:30px;display:flex;flex-direction:column}
+.article-card small{color:var(--gold2);font-weight:700}
+.article-card h2{flex:1}
+.article-card a{align-self:flex-start;color:var(--gold2)!important;font-size:8px;letter-spacing:2px;font-weight:800;border-bottom:1px solid var(--gold)!important;padding-bottom:6px}
+.contact-detail{background:linear-gradient(145deg,rgba(255,255,255,.025),transparent);padding-left:28px;border-left:1px solid rgba(234,210,139,.14);border-top:0}
+.contact-detail div{padding:25px 0}
+.contact-detail strong{font-family:var(--ser);font-size:21px;letter-spacing:.2px}
+footer .footer-nav a:hover{color:var(--gold2)}
+@media(max-width:900px){.page-hero{min-height:62vh}.article-grid{grid-template-columns:1fr 1fr}.dark-card{min-height:245px}.contact-detail{padding-left:0;border-left:0;border-top:1px solid rgba(234,210,139,.14)}}
+@media(max-width:560px){.page-hero{padding-top:135px;min-height:60vh}.page-hero:before{width:70vw;height:70vw;right:-30%;top:18%}.page-hero h1{letter-spacing:-1px}.page-section h2{font-size:38px}.dark-card{padding:30px 24px;min-height:0}.article-grid{grid-template-columns:1fr}.article-card{min-height:260px;padding:25px}.contact-detail strong{font-size:19px}}
