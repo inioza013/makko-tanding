@@ -855,3 +855,7 @@ header .brand img{
  .field-page-grid figcaption{left:20px;right:20px;bottom:19px}
  .field-page-grid figcaption strong{font-size:23px}
 }
+
+.field-gallery-link{max-width:1180px;margin:30px auto 0;text-align:right}
+.field-gallery-link .under{display:inline-flex;align-items:center;gap:8px}
+@media(max-width:700px){.field-gallery-link{text-align:left;margin-top:24px}}
