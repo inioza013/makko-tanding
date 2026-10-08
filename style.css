@@ -229,3 +229,10 @@ header .brand{
     flex-basis:42px;
   }
 }
+
+/* BANNER LOGO — PREMIUM LAW FIRM MARK */
+.page-hero .banner-logo{position:relative;z-index:3;width:92px;height:92px;margin-bottom:28px;display:flex;align-items:center;justify-content:center}
+.page-hero .banner-logo-ring{width:92px;height:92px;padding:15px;display:grid;place-items:center;border:1px solid rgba(234,210,139,.62);border-radius:50%;background:radial-gradient(circle,rgba(198,160,74,.10),rgba(0,0,0,.18) 68%,transparent 70%);box-shadow:0 0 0 7px rgba(234,210,139,.035),0 0 45px rgba(198,160,74,.13),inset 0 0 28px rgba(234,210,139,.07)}
+.page-hero .banner-logo img{display:block !important;width:100%;height:100%;object-fit:contain;opacity:1 !important;filter:drop-shadow(0 0 10px rgba(234,210,139,.28))}
+.page-hero .banner-logo:after{content:"";position:absolute;left:50%;bottom:-18px;width:42px;height:1px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,var(--gold2),transparent)}
+@media(max-width:560px){.page-hero .banner-logo{width:70px;height:70px;margin-bottom:21px}.page-hero .banner-logo-ring{width:70px;height:70px;padding:11px}.page-hero .banner-logo:after{bottom:-14px;width:32px}}
