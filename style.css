@@ -352,3 +352,66 @@ header .brand{
     justify-content:center;
   }
 }
+
+
+/* SUBPAGE HERO — SAME CINEMATIC LANGUAGE AS HOME */
+.page-hero{
+  min-height:100vh!important;
+  height:100vh;
+  padding:150px 8% 90px!important;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  isolation:isolate;
+  background:#050504!important;
+}
+.page-hero>div.subhero-photo{
+  position:absolute!important;inset:0!important;z-index:-4!important;max-width:none!important;width:auto!important;
+  background-image:url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2400&q=92");
+  background-size:cover;background-position:center 48%;filter:grayscale(100%) contrast(125%) brightness(30%);transform:scale(1.035);
+}
+.page-hero>div.subhero-vignette{
+  position:absolute!important;inset:0!important;z-index:-3!important;max-width:none!important;width:auto!important;
+  background:radial-gradient(ellipse at 78% 42%,rgba(214,176,82,.20),transparent 23%),linear-gradient(90deg,rgba(2,2,2,.99) 0%,rgba(3,3,2,.91) 34%,rgba(3,3,2,.56) 68%,rgba(3,3,2,.78) 100%);
+}
+.page-hero>div.subhero-grain{
+  position:absolute!important;inset:0!important;z-index:-2!important;max-width:none!important;width:auto!important;opacity:.08;
+  background-image:radial-gradient(#fff .5px,transparent .6px);background-size:5px 5px;mix-blend-mode:overlay;
+}
+.page-hero .subhero-content{
+  position:relative!important;z-index:4!important;width:min(760px,58%)!important;max-width:760px!important;text-align:left!important;
+}
+.page-hero .subhero-content .banner-logo-large{display:none!important}
+.page-hero .subhero-content .label{justify-content:flex-start!important}
+.page-hero .subhero-content h1{text-align:left!important;font-size:clamp(66px,8vw,116px)!important;line-height:.82!important;margin:29px 0!important}
+.page-hero .subhero-content p{text-align:left!important;margin-left:0!important;margin-right:0!important;max-width:540px}
+.page-hero .subhero-content .label:before{display:none}
+.page-hero .subhero-content:before{content:"";display:block;width:74px;height:1px;background:linear-gradient(90deg,var(--gold2),transparent);margin-bottom:25px}
+.page-hero .subhero-emblem{
+  position:absolute!important;z-index:3!important;right:7%!important;top:50%!important;transform:translateY(-50%)!important;
+  width:min(34vw,440px)!important;max-width:440px!important;opacity:1!important;display:block!important;
+}
+.page-hero .subhero-emblem .emblem-frame{
+  padding:22px!important;border:1px solid rgba(234,210,139,.32)!important;border-radius:50%!important;
+  box-shadow:0 0 0 20px rgba(234,210,139,.018),0 0 80px rgba(198,160,74,.08),inset 0 0 80px rgba(234,210,139,.08)!important;
+  background:rgba(0,0,0,.08);
+}
+.page-hero .subhero-emblem img{width:100%!important;display:block!important;opacity:1!important;filter:drop-shadow(0 12px 28px rgba(0,0,0,.55)) drop-shadow(0 0 22px rgba(210,175,85,.20))}
+.page-hero .hero-caption{z-index:4!important;left:8%!important;right:8%!important;bottom:25px!important}
+@media(max-width:900px){
+  .page-hero{min-height:100svh!important;height:auto;padding:130px 7% 80px!important}
+  .page-hero .subhero-content{width:62%!important}
+  .page-hero .subhero-emblem{right:-6%!important;width:52vw!important;top:50%!important}
+  .page-hero .subhero-content h1{font-size:clamp(52px,8vw,76px)!important}
+}
+@media(max-width:560px){
+  .page-hero{min-height:100svh!important;padding:115px 20px 70px!important;align-items:center}
+  .page-hero>div.subhero-photo{background-position:65% center;filter:grayscale(100%) contrast(120%) brightness(25%)}
+  .page-hero .subhero-content{width:100%!important;max-width:100%!important}
+  .page-hero .subhero-content:before{width:52px;margin-bottom:18px}
+  .page-hero .subhero-content h1{font-size:clamp(48px,14vw,56px)!important}
+  .page-hero .subhero-content p{font-size:13px!important;line-height:1.6!important}
+  .page-hero .subhero-emblem{right:-30%!important;top:43%!important;width:82vw!important;opacity:.16!important}
+  .page-hero .hero-caption{display:none!important}
+}
