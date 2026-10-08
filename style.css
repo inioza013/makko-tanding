@@ -556,3 +556,36 @@ header .brand{
   .article-card h2{height:auto!important;min-height:0!important;font-size:30px!important;line-height:1!important;margin:19px 0 14px!important}
   .article-card p{min-height:0}
 }
+
+
+/* FINAL — NEW GOLD JUSTICE EMBLEM POLISH */
+header .brand img{
+  width:52px!important;height:52px!important;object-fit:contain!important;
+  filter:drop-shadow(0 0 7px rgba(234,210,139,.28))!important;
+}
+.footer-brand img{
+  width:50px!important;height:50px!important;object-fit:contain!important;
+  filter:drop-shadow(0 0 7px rgba(234,210,139,.22))!important;
+}
+.hero-emblem{
+  width:min(36vw,470px)!important;
+  opacity:.62!important;
+  filter:drop-shadow(0 0 34px rgba(234,210,139,.25))!important;
+}
+.hero-emblem .emblem-frame{
+  padding:18px!important;
+  border-color:rgba(234,210,139,.34)!important;
+  box-shadow:0 0 0 20px rgba(234,210,139,.018),0 0 70px rgba(198,160,74,.10),inset 0 0 65px rgba(234,210,139,.08)!important;
+}
+.hero-emblem img{display:block;width:100%;height:auto!important}
+@media(max-width:900px){
+  header .brand img{width:46px!important;height:46px!important}
+  .footer-brand img{width:48px!important;height:48px!important}
+  .hero-emblem{width:58vw!important;opacity:.38!important}
+}
+@media(max-width:560px){
+  header .brand img{width:40px!important;height:40px!important}
+  .footer-brand img{width:44px!important;height:44px!important}
+  .hero-emblem{right:-31%!important;top:39%!important;width:88vw!important;opacity:.25!important}
+  .hero-emblem .emblem-frame{padding:15px!important}
+}
