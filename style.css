@@ -415,3 +415,21 @@ header .brand{
   .page-hero .subhero-emblem{right:-30%!important;top:43%!important;width:82vw!important;opacity:.16!important}
   .page-hero .hero-caption{display:none!important}
 }
+
+
+/* FINAL SUBWEB CAPTION — MATCH HOME */
+.page-hero .hero-caption{
+  position:absolute!important; z-index:10!important;
+  left:8%!important; right:8%!important; bottom:27px!important;
+  display:flex!important; align-items:center!important; justify-content:space-between!important;
+  gap:24px!important; color:#76736b!important; font-family:var(--sans)!important;
+  font-size:7px!important; line-height:1!important; font-weight:600!important;
+  letter-spacing:2.5px!important; text-transform:uppercase!important;
+  white-space:nowrap!important; pointer-events:none!important;
+}
+.page-hero .hero-caption span{display:block!important;margin:0!important;padding:0!important}
+.page-hero .hero-caption span:last-child{color:#8b8067!important;text-align:right!important}
+@media(max-width:900px){.page-hero .hero-caption{left:7%!important;right:7%!important}}
+@media(max-width:560px){
+ .page-hero .hero-caption{display:flex!important;left:20px!important;right:20px!important;bottom:18px!important;font-size:6px!important;letter-spacing:1.4px!important}
+}
