@@ -190,3 +190,42 @@ footer .footer-nav a:hover{color:var(--gold2)}
 .dark-card a{color:#ead28b !important}
 .contact-detail strong{color:#f0ece2 !important}
 .page-hero p{color:#d0cbc0 !important}
+
+
+/* SUBPAGE LOGO VISIBILITY FIX */
+header .brand img,
+.footer-brand img{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+}
+header .brand img{
+  width:49px;
+  height:49px;
+  flex:0 0 49px;
+}
+.footer-brand img{
+  width:45px;
+  height:45px;
+  flex:0 0 45px;
+}
+header .brand{
+  display:flex !important;
+  visibility:visible !important;
+  opacity:1 !important;
+}
+@media(max-width:560px){
+  header .brand img{
+    width:38px;
+    height:38px;
+    flex-basis:38px;
+  }
+  .footer-brand img{
+    width:42px;
+    height:42px;
+    flex-basis:42px;
+  }
+}
