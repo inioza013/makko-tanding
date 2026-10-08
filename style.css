@@ -433,3 +433,88 @@ header .brand{
 @media(max-width:560px){
  .page-hero .hero-caption{display:flex!important;left:20px!important;right:20px!important;bottom:18px!important;font-size:6px!important;letter-spacing:1.4px!important}
 }
+
+/* FINAL — PREMIUM INSIGHTS ARTICLE TITLES */
+.article-grid{
+  align-items:stretch;
+}
+.article-card{
+  position:relative;
+  min-height:350px;
+  padding:34px 32px 30px;
+  overflow:hidden;
+  justify-content:flex-start;
+  background:
+    radial-gradient(circle at 100% 0,rgba(234,210,139,.07),transparent 34%),
+    linear-gradient(145deg,#151512,#090908 72%);
+}
+.article-card:before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:32px;
+  width:46px;
+  height:1px;
+  background:linear-gradient(90deg,var(--gold2),transparent);
+}
+.article-card small{
+  display:block;
+  margin:0;
+  padding-top:3px;
+  color:#cdb36b!important;
+  font-family:var(--sans);
+  font-size:7px!important;
+  font-weight:700;
+  letter-spacing:2.8px!important;
+  line-height:1.4;
+  text-transform:uppercase;
+}
+.article-card h2{
+  flex:none!important;
+  margin:23px 0 17px!important;
+  max-width:15ch;
+  color:#f2eee5!important;
+  font-family:var(--ser)!important;
+  font-size:clamp(30px,2.45vw,39px)!important;
+  font-weight:500!important;
+  line-height:.94!important;
+  letter-spacing:-.45px!important;
+  text-wrap:balance;
+}
+.article-card p{
+  margin:0 0 28px!important;
+  max-width:34ch;
+  color:#98948a!important;
+  font-size:11px!important;
+  line-height:1.7!important;
+}
+.article-card a{
+  margin-top:auto!important;
+  padding-bottom:7px!important;
+  color:#ead28b!important;
+  font-size:7px!important;
+  letter-spacing:2.2px!important;
+}
+.article-card a:after{
+  content:"";
+  display:inline-block;
+  width:24px;
+  height:1px;
+  margin-left:10px;
+  vertical-align:middle;
+  background:rgba(234,210,139,.5);
+}
+.article-card:hover h2{
+  color:#ead28b!important;
+  transition:color .3s ease;
+}
+@media(max-width:900px){
+  .article-card{min-height:325px;padding:30px 27px 27px}
+  .article-card:before{left:27px}
+  .article-card h2{font-size:clamp(29px,4vw,36px)!important}
+}
+@media(max-width:560px){
+  .article-card{min-height:290px;padding:28px 24px 25px}
+  .article-card:before{left:24px}
+  .article-card h2{font-size:31px!important;max-width:16ch}
+}
