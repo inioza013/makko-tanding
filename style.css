@@ -236,3 +236,10 @@ header .brand{
 .page-hero .banner-logo img{display:block !important;width:100%;height:100%;object-fit:contain;opacity:1 !important;filter:drop-shadow(0 0 10px rgba(234,210,139,.28))}
 .page-hero .banner-logo:after{content:"";position:absolute;left:50%;bottom:-18px;width:42px;height:1px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,var(--gold2),transparent)}
 @media(max-width:560px){.page-hero .banner-logo{width:70px;height:70px;margin-bottom:21px}.page-hero .banner-logo-ring{width:70px;height:70px;padding:11px}.page-hero .banner-logo:after{bottom:-14px;width:32px}}
+
+/* SUBPAGE BANNER — LARGE HOMEPAGE-STYLE LOGO */
+.page-hero .banner-logo-large{position:relative;z-index:3;width:min(330px,34vw);margin:0 auto 34px;display:flex;align-items:center;justify-content:center}
+.page-hero .banner-logo-large img{display:block!important;width:100%;height:auto;max-height:230px;object-fit:contain;opacity:1!important;filter:drop-shadow(0 12px 28px rgba(0,0,0,.55)) drop-shadow(0 0 22px rgba(210,175,85,.16))}
+.page-hero .banner-logo-large:after{content:"";position:absolute;left:50%;bottom:-18px;width:70px;height:1px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,var(--gold2),transparent)}
+@media(max-width:760px){.page-hero .banner-logo-large{width:min(270px,58vw);margin-bottom:28px}.page-hero .banner-logo-large img{max-height:190px}}
+@media(max-width:560px){.page-hero .banner-logo-large{width:min(230px,62vw);margin-bottom:24px}.page-hero .banner-logo-large img{max-height:160px}}
