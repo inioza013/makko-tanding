@@ -859,3 +859,38 @@ header .brand img{
 .field-gallery-link{max-width:1180px;margin:30px auto 0;text-align:right}
 .field-gallery-link .under{display:inline-flex;align-items:center;gap:8px}
 @media(max-width:700px){.field-gallery-link{text-align:left;margin-top:24px}}
+
+
+/* READABILITY PASS — stronger contrast and usable type sizes */
+:root{--muted:#625e54;--line:#c9c0ae}
+body{font-size:15px}
+nav{gap:clamp(12px,1.35vw,22px)}
+nav a{font-size:10px;letter-spacing:1.25px;color:#f0eee8}
+.brand small{color:#d1c49d;font-size:7px}
+.hero-text{color:#e0ddd5}
+.quiet{color:#e0ddd5;font-size:10px}
+.hero-caption{color:#c3beb2;font-size:8px}
+.prestige small{color:#c4c0b6}
+.copy p:not(.large),.team-heading>p:last-child{color:#5d594f}
+.practice-head p{color:#c1bdb3}
+.practice-list p{color:#c1bdb3}
+.practice-list i{color:#625b46}
+.page-hero p{color:#e2dfd7}
+.dark-card p{color:#d0ccc2}
+.article-card p{color:#5d594f}
+.article-card small{color:#806018}
+.contact-detail strong{color:#f4f1e9}
+.footer-nav a{color:#c9c5bb}
+.footer-bottom{color:#aaa69b}
+.field-head p,.field-page-intro p{color:#c4c0b6}
+.field-head .eyebrow{color:#ead28b}
+button:focus-visible,a:focus-visible{outline:3px solid #ead28b;outline-offset:4px}
+@media(max-width:900px){nav a{font-size:11px;padding:12px 0}}
+@media(max-width:560px){
+ nav a{font-size:11px;letter-spacing:1.25px}
+ .brand small{font-size:5.5px}
+ .hero-text{font-size:14px}
+ .prestige small{font-size:9px;color:#d0ccc2}
+ .page-hero p{font-size:14px}
+ .article-card p,.dark-card p{font-size:14px}
+}
