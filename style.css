@@ -1465,3 +1465,14 @@ body.home .hero-emblem img{display:block;width:100%;height:auto;object-fit:conta
 body.home .hero-caption{z-index:4}
 @media(max-width:900px){body.home .hero-content{width:72%;max-width:620px}body.home .cinema h1{font-size:clamp(43px,7.2vw,64px)}body.home .hero-emblem{right:-2%;top:34%;width:34vw;opacity:.09}}
 @media(max-width:560px){body.home .hero-content{width:100%;max-width:100%}body.home .cinema h1{font-size:clamp(37px,10vw,46px);line-height:.98;letter-spacing:-.4px;margin:18px 0 14px}body.home .hero-subtitle{font-size:9px;letter-spacing:1.5px;max-width:290px;line-height:1.65}body.home .hero-text{max-width:330px;font-size:12px;line-height:1.75}body.home .hero-emblem{right:-34%;top:47%;width:76vw;opacity:.045}body.home .emblem-frame{padding:10px;border-color:rgba(234,210,139,.12);box-shadow:none}}
+
+
+/* HERO REQUEST — keep MAKKO TANDING together; place slogan and its rule below logo */
+body.home .cinema h1 em{white-space:nowrap!important;display:block!important;letter-spacing:-1.1px}
+body.home .hero-emblem{right:6%;top:17%;width:min(28vw,340px);opacity:.17}
+body.home .hero-caption{left:auto;right:6%;bottom:12%;width:min(340px,28vw);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:9px;text-align:center;border-top:0!important;padding-top:0!important;letter-spacing:1.5px;line-height:1.6;color:#d8c99f}
+body.home .hero-caption:before{content:"";display:block;width:58px;height:1px;background:linear-gradient(90deg,transparent,#c8a45d,transparent);order:2;margin-top:2px}
+body.home .hero-caption span:first-child{order:1;font-size:8px;letter-spacing:1.35px;max-width:100%;text-wrap:balance}
+body.home .hero-caption span:last-child{order:3;font-size:7px;letter-spacing:2px;color:#9d9278}
+@media(max-width:900px){body.home .cinema h1 em{font-size:clamp(40px,6.5vw,60px);letter-spacing:-.7px}body.home .hero-emblem{right:3%;top:20%;width:30vw}body.home .hero-caption{right:3%;bottom:10%;width:30vw}}
+@media(max-width:560px){body.home .cinema h1 em{font-size:clamp(32px,8.9vw,42px);letter-spacing:-.5px}body.home .hero-emblem{right:2%;top:auto;bottom:17%;width:34vw;opacity:.11}body.home .hero-caption{display:flex!important;right:2%;bottom:6%;width:34vw;gap:5px;font-size:6px;letter-spacing:1px}body.home .hero-caption span:first-child{font-size:6px;letter-spacing:.7px}body.home .hero-caption span:last-child{font-size:5px;letter-spacing:1px}body.home .hero-caption:before{width:38px}}
