@@ -1519,3 +1519,32 @@ body.home .hero-caption span:last-child{order:0;font-size:7px;letter-spacing:2px
  body.home .hero-caption span:first-child{font-size:6px;letter-spacing:.65px}
  body.home .hero-caption span:last-child{font-size:5px;letter-spacing:1px}
 }
+
+
+/* BANNER FOOTER RULE — slogan and location centered on a long gold divider */
+body.home .cinema{position:relative;padding-bottom:82px}
+body.home .hero-caption{
+  left:0!important;right:0!important;top:auto!important;bottom:0!important;
+  width:100%!important;min-height:58px;box-sizing:border-box;
+  display:flex!important;flex-direction:row!important;align-items:center!important;
+  justify-content:center!important;gap:22px!important;text-align:center!important;
+  padding:17px 7% 15px!important;margin:0!important;
+  border-top:1px solid rgba(220,174,75,.9)!important;
+  background:linear-gradient(90deg,rgba(8,8,7,.76),rgba(8,8,7,.92),rgba(8,8,7,.76))!important;
+  line-height:1.5;z-index:4;
+}
+body.home .hero-caption:before{display:none!important;content:none!important}
+body.home .hero-caption span:first-child{
+  order:0;font-size:8px!important;letter-spacing:1.6px!important;
+  color:#e7d5a4!important;max-width:none!important;white-space:normal;
+}
+body.home .hero-caption span:last-child{
+  order:0;font-size:7px!important;letter-spacing:2px!important;
+  color:#c5a45e!important;white-space:nowrap;
+}
+@media(max-width:700px){
+  body.home .cinema{padding-bottom:88px}
+  body.home .hero-caption{min-height:68px;flex-direction:column!important;gap:4px!important;padding:12px 20px 13px!important}
+  body.home .hero-caption span:first-child{font-size:7px!important;letter-spacing:1px!important}
+  body.home .hero-caption span:last-child{font-size:6px!important;letter-spacing:1.2px!important}
+}
