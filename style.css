@@ -1014,7 +1014,7 @@ html body header#header nav{
 html body header#header nav a{
   box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;
   min-height:40px;padding:8px 0;margin:0;
-  font-family:var(--sans);font-size:8px;font-weight:800!important;
+  font-family:var(--sans);font-size:9px;font-weight:800!important;
   letter-spacing:1.15px;line-height:1.25;text-transform:uppercase;
   white-space:nowrap;border-bottom:1px solid transparent;
 }
@@ -1029,7 +1029,7 @@ html body header#header nav a.gold-link{
   border:1px solid rgba(255,244,194,.7);border-radius:6px;
   background:linear-gradient(135deg,#f0d88d,#b78932);
   color:#090806!important;-webkit-text-fill-color:#090806!important;
-  font-family:var(--sans);font-size:8px;font-weight:800!important;
+  font-family:var(--sans);font-size:9px;font-weight:800!important;
   letter-spacing:1px;line-height:1.2;text-align:center;text-decoration:none;
   white-space:nowrap;box-shadow:0 8px 22px rgba(198,160,74,.16);
 }
@@ -1057,13 +1057,13 @@ html body header#header nav a.gold-link:focus-visible{
   html body header#header nav a.gold-link{
     display:inline-flex;width:128px;min-width:128px;max-width:100%;
     min-height:44px;margin:10px 0 0;padding:12px 12px;
-    justify-content:center;font-size:9px;letter-spacing:1.2px;
+    justify-content:center;font-size:10px;letter-spacing:1.2px;
   }
   html body header#header #menu{display:grid;place-items:center;width:44px;height:44px;flex:0 0 44px;cursor:pointer}
 }
 @media(max-width:560px){
   html body header#header{height:68px;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
   html body header#header nav{top:68px;padding:16px 20px max(18px,env(safe-area-inset-bottom));max-height:calc(100vh - 68px)}
-  html body header#header nav a{min-height:44px;padding:12px 0}
+  html body header#header nav a{min-height:44px;padding:12px 0;font-size:10px}
   html body header#header nav a.gold-link{margin-top:9px;padding:12px 12px}
 }
