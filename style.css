@@ -1476,3 +1476,26 @@ body.home .hero-caption span:first-child{order:1;font-size:8px;letter-spacing:1.
 body.home .hero-caption span:last-child{order:3;font-size:7px;letter-spacing:2px;color:#9d9278}
 @media(max-width:900px){body.home .cinema h1 em{font-size:clamp(40px,6.5vw,60px);letter-spacing:-.7px}body.home .hero-emblem{right:3%;top:20%;width:30vw}body.home .hero-caption{right:3%;bottom:10%;width:30vw}}
 @media(max-width:560px){body.home .cinema h1 em{font-size:clamp(32px,8.9vw,42px);letter-spacing:-.5px}body.home .hero-emblem{right:2%;top:auto;bottom:17%;width:34vw;opacity:.11}body.home .hero-caption{display:flex!important;right:2%;bottom:6%;width:34vw;gap:5px;font-size:6px;letter-spacing:1px}body.home .hero-caption span:first-child{font-size:6px;letter-spacing:.7px}body.home .hero-caption span:last-child{font-size:5px;letter-spacing:1px}body.home .hero-caption:before{width:38px}}
+
+
+/* FINAL HERO ALIGNMENT — tagline and location directly below the logo, lower-right */
+@media(min-width:901px){
+  body.home .hero-emblem{right:6%;top:13%;width:min(25vw,300px);opacity:.19}
+  body.home .hero-caption{right:5.1%;top:calc(13% + min(25vw,300px) + 20px);bottom:auto;width:min(320px,27vw);gap:7px;align-items:center;text-align:center}
+  body.home .hero-caption span:first-child{font-size:8px;letter-spacing:1.15px;line-height:1.55}
+  body.home .hero-caption:before{order:2;margin:3px auto;width:54px}
+  body.home .hero-caption span:last-child{order:3;font-size:7px;letter-spacing:1.7px}
+}
+@media(min-width:561px) and (max-width:900px){
+  body.home .hero-emblem{right:3%;top:15%;width:28vw;opacity:.16}
+  body.home .hero-caption{right:2.5%;top:calc(15% + 28vw + 12px);bottom:auto;width:29vw;gap:5px}
+  body.home .hero-caption span:first-child{font-size:7px;letter-spacing:.8px}
+  body.home .hero-caption span:last-child{font-size:6px;letter-spacing:1px}
+}
+@media(max-width:560px){
+  body.home .hero-emblem{right:3%;top:auto;bottom:24%;width:34vw;opacity:.12}
+  body.home .hero-caption{right:2%;top:auto;bottom:7%;width:36vw;gap:4px;display:flex!important}
+  body.home .hero-caption span:first-child{font-size:6px;letter-spacing:.45px;line-height:1.45}
+  body.home .hero-caption:before{width:34px;margin:1px auto}
+  body.home .hero-caption span:last-child{font-size:5px;letter-spacing:.7px}
+}
