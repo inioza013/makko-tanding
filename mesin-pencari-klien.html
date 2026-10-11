@@ -17,34 +17,45 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Cari Solusi Hukum MAKKO TANDING","url":"https://inioza013.github.io/makko-tanding/mesin-pencari-klien.html","description":"Pusat navigasi informasi dan layanan hukum berdasarkan kebutuhan pengguna.","publisher":{"@type":"LegalService","name":"Kantor Hukum MAKKO TANDING","url":"https://inioza013.github.io/makko-tanding/","logo":"https://inioza013.github.io/makko-tanding/Logo_Makko_Tanding_Full_Gold.png"}}</script>
 
 <style>
-/* Tombol halaman Find Legal Solution: konsisten, rapi, dan rata tengah */
+/* Seluruh tombol kartu memakai format visual yang sama dengan CTA WhatsApp */
 .article-card a.btn {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
+  align-self: stretch !important;
   width: 100%;
   min-height: 44px;
   margin: 12px 0 0;
-  padding: 12px 14px;
-  border: 1px solid #c6a04a;
-  border-radius: 7px;
-  box-shadow: none;
+  padding: 14px 16px;
+  background: linear-gradient(135deg,#f0d88d,#b78932);
+  color: #080806 !important;
+  border: 1px solid rgba(255,244,194,.45) !important;
+  border-radius: 0;
+  box-shadow: 0 12px 35px rgba(198,160,74,.18);
   font-family: var(--sans);
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 8px !important;
+  font-weight: 800 !important;
   line-height: 1.4;
-  letter-spacing: 0;
+  letter-spacing: 2px !important;
   text-align: center;
-  text-transform: none;
-  text-decoration: none;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  padding-bottom: 14px !important;
+  transition: background .25s ease, box-shadow .25s ease, transform .25s ease;
 }
+.article-card a.btn::after { content: none !important; display: none !important; }
 .article-card a.btn:hover,
 .article-card a.btn:focus-visible {
-  background: #ead28b;
-  color: #090907;
+  background: linear-gradient(135deg,#f7e7ad,#c6a04a);
+  color: #080806 !important;
+  border-bottom-color: rgba(255,244,194,.45) !important;
+  box-shadow: 0 15px 40px rgba(198,160,74,.25);
 }
 .article-card a.btn + br { display: none; }
 .article-card a.btn + a.btn { margin-top: 10px; }
+@media(max-width:560px) {
+  .article-card a.btn { width:100%; font-size:8px !important; padding:15px 14px !important; }
+}
 </style>
 
 </head>
