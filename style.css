@@ -1450,3 +1450,18 @@ body.home .hero-emblem{z-index:1;right:5%;top:22%;width:min(29vw,360px);opacity:
 body.home .hero-caption{position:relative;z-index:3}
 @media(max-width:900px){body.home .hero-content{max-width:75vw;padding-right:12px}body.home .cinema h1{font-size:clamp(46px,8vw,72px)}body.home .hero-emblem{right:-2%;top:32%;width:40vw;opacity:.13}}
 @media(max-width:560px){body.home .hero-content{max-width:100%;padding-right:0}body.home .cinema h1{font-size:clamp(39px,10.5vw,49px);letter-spacing:-.6px;line-height:.94;margin:20px 0 15px}body.home .hero-emblem{right:-35%;top:44%;width:82vw;opacity:.07}}
+
+
+/* HERO BANNER CLEAN LAYOUT — separate title, tagline and logo */
+body.home .cinema{overflow:hidden}
+body.home .hero-content{width:min(56%,690px);max-width:690px;padding-right:0;z-index:4}
+body.home .cinema h1{font-size:clamp(46px,5.6vw,78px);line-height:.94;letter-spacing:-.8px;max-width:100%;margin:22px 0 16px;overflow-wrap:normal}
+body.home .cinema h1 em{display:block;margin-top:7px;white-space:normal}
+body.home .hero-subtitle{max-width:100%;font-size:clamp(9px,.85vw,12px);letter-spacing:2.2px;line-height:1.7;margin:0 0 16px;white-space:normal}
+body.home .hero-text{max-width:500px;margin-top:0}
+body.home .hero-emblem{position:absolute;z-index:2;right:5%;top:24%;width:min(27vw,330px);max-width:330px;opacity:.13;pointer-events:none}
+body.home .emblem-frame{padding:14px;border-color:rgba(234,210,139,.22);box-shadow:0 0 0 9px rgba(234,210,139,.018),0 0 45px rgba(200,164,93,.05)}
+body.home .hero-emblem img{display:block;width:100%;height:auto;object-fit:contain}
+body.home .hero-caption{z-index:4}
+@media(max-width:900px){body.home .hero-content{width:72%;max-width:620px}body.home .cinema h1{font-size:clamp(43px,7.2vw,64px)}body.home .hero-emblem{right:-2%;top:34%;width:34vw;opacity:.09}}
+@media(max-width:560px){body.home .hero-content{width:100%;max-width:100%}body.home .cinema h1{font-size:clamp(37px,10vw,46px);line-height:.98;letter-spacing:-.4px;margin:18px 0 14px}body.home .hero-subtitle{font-size:9px;letter-spacing:1.5px;max-width:290px;line-height:1.65}body.home .hero-text{max-width:330px;font-size:12px;line-height:1.75}body.home .hero-emblem{right:-34%;top:47%;width:76vw;opacity:.045}body.home .emblem-frame{padding:10px;border-color:rgba(234,210,139,.12);box-shadow:none}}
