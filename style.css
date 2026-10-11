@@ -1144,3 +1144,119 @@ html body header#header nav a.gold-link{
   html body header#header nav a{font-size:10px!important;letter-spacing:1.3px!important}
   html body header#header nav a.gold-link{font-size:10px!important}
 }
+
+
+/* STAGE 1 — BLACK LUXURY INTERNATIONAL DESIGN SYSTEM */
+:root{
+  --black:#080807;
+  --gold:#c8a45d;
+  --gold2:#f0d994;
+  --paper:#11110f;
+  --ink:#f2eee4;
+  --muted:#aaa397;
+  --line:rgba(234,210,139,.22);
+  --ser:"Cormorant Garamond",Georgia,serif;
+  --sans:"Manrope",Arial,sans-serif;
+  --luxury-panel:#10100e;
+  --luxury-panel-soft:#151511;
+}
+html{color-scheme:dark;scroll-padding-top:100px}
+body{
+  background-color:#080807;
+  color:#eae5da;
+  font-family:var(--sans);
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:#c8a45d;color:#080807}
+a{transition:color .22s ease,border-color .22s ease,background-color .22s ease}
+a:hover{color:var(--gold2)}
+/* Unified luxury header and navigation */
+html body header#header,html body>header{
+  background:rgba(6,6,5,.91);
+  border-bottom:1px solid rgba(200,164,93,.26);
+  box-shadow:0 12px 38px rgba(0,0,0,.26);
+  backdrop-filter:blur(18px);
+}
+html body header#header .brand b,html body>header .brand b{
+  color:#fff8e9;
+  letter-spacing:1.35px;
+}
+html body header#header .brand small,html body>header .brand small{
+  color:#d0b36e;
+}
+html body header#header nav a,html body>header nav a{
+  color:#e1dbce;
+  font-weight:800;
+  transition:color .2s ease,border-color .2s ease,background .2s ease;
+}
+html body header#header nav a:hover,html body header#header nav a.active,
+html body>header nav a:hover,html body>header nav a.active{color:var(--gold2)}
+html body header#header nav a.gold-link,html body>header nav a.gold-link{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:40px;padding:10px 16px;
+  border:1px solid rgba(240,217,148,.8);
+  background:linear-gradient(135deg,#f0d994,#bd913e);
+  color:#0a0906!important;
+  -webkit-text-fill-color:#0a0906;
+  box-shadow:0 8px 24px rgba(200,164,93,.13);
+}
+html body header#header nav a.gold-link:hover,html body>header nav a.gold-link:hover{
+  background:linear-gradient(135deg,#fff0b5,#d3ad60);
+  border-color:#fff0b5;
+}
+/* Consistent premium buttons */
+html body a.btn,html body button.btn,html body .btn,
+html body a.button,html body button.button{
+  border:1px solid rgba(255,241,190,.48);
+  border-radius:2px;
+  background:linear-gradient(135deg,#f0d994 0%,#c8a45d 52%,#a77c2d 100%);
+  color:#090806!important;
+  -webkit-text-fill-color:#090806;
+  font-family:var(--sans);
+  font-weight:800;
+  letter-spacing:1.35px;
+  box-shadow:0 12px 30px rgba(200,164,93,.13);
+  transition:transform .22s ease,box-shadow .22s ease,filter .22s ease;
+}
+html body a.btn:hover,html body button.btn:hover,html body .btn:hover,
+html body a.button:hover,html body button.button:hover{
+  color:#050504!important;
+  -webkit-text-fill-color:#050504;
+  filter:brightness(1.07);
+  transform:translateY(-2px);
+  box-shadow:0 16px 34px rgba(200,164,93,.22);
+}
+html body a.quiet,html body a.under{color:#e7d6a8}
+html body a.quiet:hover,html body a.under:hover{color:#fff1bf}
+/* Dark, restrained panels and clear body copy */
+html body .dark-card,html body .article-card{
+  border-color:rgba(234,210,139,.18);
+}
+html body .dark-card p,html body .article-card p{
+  color:#c0b9ab;
+}
+html body .article-card h2,html body .dark-card h2{color:#fff8e9}
+html body .article-card small,html body .dark-card .label{color:#e0bf70}
+html body input,html body select,html body textarea{
+  background:#10100e;color:#f5f0e5;border:1px solid rgba(234,210,139,.32);
+}
+html body input::placeholder,html body textarea::placeholder{color:#a49c8e}
+html body input:focus,html body select:focus,html body textarea:focus{
+  outline:2px solid rgba(240,217,148,.65);outline-offset:2px;border-color:#e0bf70;
+}
+html body hr{border:0;border-top:1px solid rgba(234,210,139,.2)}
+@media(max-width:1280px){
+  html body header#header nav,html body>header nav{gap:clamp(7px,.8vw,12px)}
+  html body header#header nav a,html body>header nav a{font-size:10px;letter-spacing:1.2px}
+}
+@media(max-width:900px){
+  html body header#header nav,html body>header nav{
+    background:rgba(7,7,6,.98);
+    border-bottom:1px solid rgba(234,210,139,.25);
+  }
+  html body header#header nav a,html body>header nav a{font-size:10px;letter-spacing:1.5px}
+}
+@media(prefers-reduced-motion:reduce){
+  html body a,html body .btn{transition:none}
+}
