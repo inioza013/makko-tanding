@@ -1121,20 +1121,20 @@ html body header#header .brand small{
   white-space:nowrap!important;
 }
 html body header#header nav a{
-  font-size:9px!important;
+  font-size:10px!important;
   font-weight:800!important;
   letter-spacing:1.05px!important;
 }
 html body header#header nav a.gold-link{
-  font-size:9px!important;
+  font-size:10px!important;
   font-weight:800!important;
 }
 @media(max-width:1280px){
   html body header#header .brand img{width:42px!important;height:42px!important;flex-basis:42px!important}
   html body header#header .brand b{font-size:20px!important;letter-spacing:1.1px!important}
   html body header#header .brand small{font-size:5.2px!important;letter-spacing:.95px!important}
-  html body header#header nav a{font-size:9px!important;letter-spacing:1.5px!important}
-  html body header#header nav a.gold-link{font-size:9px!important}
+  html body header#header nav a{font-size:10px!important;letter-spacing:1.2px!important}
+  html body header#header nav a.gold-link{font-size:10px!important}
 }
 @media(max-width:560px){
   html body header#header .brand{gap:8px!important}
