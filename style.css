@@ -1499,3 +1499,23 @@ body.home .hero-caption span:last-child{order:3;font-size:7px;letter-spacing:2px
   body.home .hero-caption:before{width:34px;margin:1px auto}
   body.home .hero-caption span:last-child{font-size:5px;letter-spacing:.7px}
 }
+
+
+/* HERO FINAL POSITION — logo aligned within banner; slogan/location on bottom rule */
+body.home .hero-emblem{right:6%;top:15%;width:min(27vw,330px);opacity:.20}
+body.home .hero-caption{left:8%;right:8%;top:auto;bottom:26px;width:auto;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:14px;text-align:left;border-top:1px solid rgba(234,210,139,.32)!important;padding-top:12px!important;line-height:1.5}
+body.home .hero-caption:before{display:none!important;content:none!important}
+body.home .hero-caption span:first-child{order:0;font-size:8px;letter-spacing:1.5px;max-width:none;text-wrap:unset;color:#d8c99f}
+body.home .hero-caption span:last-child{order:0;font-size:7px;letter-spacing:2px;color:#b6a77f;white-space:nowrap}
+@media(max-width:900px){
+ body.home .hero-emblem{right:4%;top:18%;width:30vw;opacity:.16}
+ body.home .hero-caption{left:7%;right:7%;bottom:20px;padding-top:10px!important}
+ body.home .hero-caption span:first-child{font-size:7px;letter-spacing:1px}
+ body.home .hero-caption span:last-child{font-size:6px;letter-spacing:1px}
+}
+@media(max-width:560px){
+ body.home .hero-emblem{right:3%;top:auto;bottom:21%;width:34vw;opacity:.13}
+ body.home .hero-caption{left:20px;right:20px;bottom:14px;display:flex!important;flex-direction:column;align-items:flex-start;gap:3px;padding-top:8px!important;text-align:left}
+ body.home .hero-caption span:first-child{font-size:6px;letter-spacing:.65px}
+ body.home .hero-caption span:last-child{font-size:5px;letter-spacing:1px}
+}
