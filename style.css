@@ -1440,3 +1440,13 @@ body.home footer{border-top:1px solid rgba(234,210,139,.24)}
   body.home .page-section{padding:72px 20px!important}
 }
 @media(prefers-reduced-motion:reduce){body.home .building-photo{animation:none}}
+
+
+/* HERO BANNER FIX — keep MAKKO TANDING title clear of the logo emblem */
+body.home .hero-content{position:relative;z-index:3;max-width:min(690px,58vw);padding-right:24px}
+body.home .cinema h1{max-width:690px;font-size:clamp(48px,6.1vw,88px);letter-spacing:-1.2px;line-height:.9;margin:24px 0 18px}
+body.home .cinema h1 em{margin-top:6px}
+body.home .hero-emblem{z-index:1;right:5%;top:22%;width:min(29vw,360px);opacity:.19}
+body.home .hero-caption{position:relative;z-index:3}
+@media(max-width:900px){body.home .hero-content{max-width:75vw;padding-right:12px}body.home .cinema h1{font-size:clamp(46px,8vw,72px)}body.home .hero-emblem{right:-2%;top:32%;width:40vw;opacity:.13}}
+@media(max-width:560px){body.home .hero-content{max-width:100%;padding-right:0}body.home .cinema h1{font-size:clamp(39px,10.5vw,49px);letter-spacing:-.6px;line-height:.94;margin:20px 0 15px}body.home .hero-emblem{right:-35%;top:44%;width:82vw;opacity:.07}}
