@@ -1038,7 +1038,7 @@ html body header#header nav a.gold-link:focus-visible{
   background:linear-gradient(135deg,#fff0bd,#d6b65d);
   border-color:#fff0bd;color:#090806!important;-webkit-text-fill-color:#090806!important;
 }
-@media(max-width:1450px){
+@media(max-width:1280px){
   html body header#header{height:74px;padding:0 4%}
   html body header#header nav{
     display:none;position:absolute;top:74px;left:0;right:0;
