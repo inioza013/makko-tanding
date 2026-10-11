@@ -1067,3 +1067,14 @@ html body header#header nav a.gold-link:focus-visible{
   html body header#header nav a{min-height:44px;padding:12px 0;font-size:10px}
   html body header#header nav a.gold-link{margin-top:9px;padding:12px 12px}
 }
+
+
+/* HOME PAGE NAVIGATION BOLDNESS FIX */
+html body.home header#header nav a{
+  font-weight:800!important;
+  -webkit-text-stroke:.15px currentColor;
+}
+html body.home header#header nav a.gold-link{
+  font-weight:800!important;
+  -webkit-text-fill-color:#090806!important;
+}
