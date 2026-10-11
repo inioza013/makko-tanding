@@ -894,3 +894,13 @@ button:focus-visible,a:focus-visible{outline:3px solid #ead28b;outline-offset:4p
  .page-hero p{font-size:14px}
  .article-card p,.dark-card p{font-size:14px}
 }
+
+/* NAVIGATION FIT — prevent menu text from colliding on medium screens */
+@media(min-width:901px) and (max-width:1180px){
+ header{padding:0 4%}
+ nav{display:none;position:absolute;top:82px;left:0;right:0;padding:22px 5%;background:#070706;flex-direction:column;align-items:flex-start;border-bottom:1px solid #2c2a23}
+ header.open nav{display:flex}
+ nav a{width:100%;padding:12px 0;font-size:11px;letter-spacing:1.2px;border-bottom:1px solid rgba(234,210,139,.1)}
+ nav .gold-link{width:auto;padding:12px 16px;margin-top:8px}
+ #menu{display:block}
+}
