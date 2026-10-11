@@ -932,3 +932,30 @@ header nav .gold-link{padding:10px clamp(8px,.8vw,13px);margin-left:2px}
  header nav a{padding:12px 0}
  header nav .gold-link{padding:12px 14px;margin-top:9px}
 }
+
+
+/* GLOBAL BUTTON SYSTEM — consistent across all pages; labels and link destinations unchanged */
+:root{--button-gold:#ead28b;--button-gold-deep:#b78932}
+a.btn,.btn,button,input[type="button"],input[type="submit"],input[type="reset"],a[class*="button"],a[class*="-btn"],a.gold-link,.radar-item a,.field-gallery-link .under{
+ box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:12px 20px;
+ border:1px solid rgba(234,210,139,.78);border-radius:7px;background:linear-gradient(135deg,var(--button-gold),var(--button-gold-deep));
+ color:#11100b!important;font-family:var(--sans);font-size:10px;font-weight:800;line-height:1.4;letter-spacing:1.15px;text-align:center;
+ text-decoration:none!important;text-transform:none;box-shadow:0 8px 22px rgba(0,0,0,.16);cursor:pointer;
+ transition:background .2s ease,color .2s ease,border-color .2s ease,box-shadow .2s ease,transform .2s ease;
+}
+a.btn:hover,.btn:hover,button:hover,input[type="button"]:hover,input[type="submit"]:hover,input[type="reset"]:hover,a[class*="button"]:hover,a[class*="-btn"]:hover,a.gold-link:hover,.radar-item a:hover,.field-gallery-link .under:hover{
+ background:linear-gradient(135deg,#fff0bd,#d6b65d);border-color:#fff0bd;color:#090806!important;box-shadow:0 11px 26px rgba(198,160,74,.2);transform:translateY(-1px)
+}
+a.btn:active,.btn:active,button:active,input[type="button"]:active,input[type="submit"]:active,input[type="reset"]:active,a[class*="button"]:active,a[class*="-btn"]:active,a.gold-link:active,.radar-item a:active,.field-gallery-link .under:active{transform:translateY(0);box-shadow:0 4px 12px rgba(0,0,0,.16)}
+a.btn:focus-visible,.btn:focus-visible,button:focus-visible,input[type="button"]:focus-visible,input[type="submit"]:focus-visible,input[type="reset"]:focus-visible,a[class*="button"]:focus-visible,a[class*="-btn"]:focus-visible,a.gold-link:focus-visible,.radar-item a:focus-visible,.field-gallery-link .under:focus-visible{outline:3px solid #fff0bd;outline-offset:3px}
+button:disabled,input[type="button"]:disabled,input[type="submit"]:disabled,input[type="reset"]:disabled{opacity:.55;cursor:not-allowed;transform:none;box-shadow:none}
+header nav a.gold-link{min-height:40px;padding:10px 15px;border-radius:6px;white-space:nowrap}
+.radar-item a.radar-button,.radar-item a:not(.radar-button){width:auto;margin-top:auto;font-size:11px;letter-spacing:.35px}
+.field-page-cta .btn{display:inline-flex}
+@media(max-width:560px){
+ a.btn,.btn,button,input[type="button"],input[type="submit"],input[type="reset"],a[class*="button"],a[class*="-btn"],a.gold-link,.radar-item a,.field-gallery-link .under{min-height:44px;padding:12px 16px;font-size:10px}
+ .radar-item a.radar-button,.radar-item a:not(.radar-button){width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+ a.btn,.btn,button,input[type="button"],input[type="submit"],input[type="reset"],a[class*="button"],a[class*="-btn"],a.gold-link,.radar-item a,.field-gallery-link .under{transition:none}
+}
