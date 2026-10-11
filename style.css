@@ -1558,3 +1558,25 @@ body.home .hero-caption:after{right:0!important;left:auto!important}
 body.home .hero-caption span:first-child{font-size:8px!important;letter-spacing:1.4px!important;color:#ead9ad!important;white-space:nowrap!important;max-width:none!important}
 body.home .hero-caption span:last-child{font-size:7px!important;letter-spacing:1.8px!important;color:#c6a45f!important;white-space:nowrap!important}
 @media(max-width:760px){body.home .hero-caption{min-height:64px!important;flex-direction:column!important;gap:4px!important;padding:10px 20px!important}body.home .hero-caption:before,body.home .hero-caption:after{width:14%!important;max-width:14%!important}body.home .hero-caption span:first-child{font-size:6px!important;letter-spacing:.7px!important;white-space:normal!important}body.home .hero-caption span:last-child{font-size:6px!important;letter-spacing:1px!important}}
+
+/* HOME PAGE — use the uploaded reference artwork as the hero design */
+body.home .cinema{
+  height:calc(100vw * .495)!important;
+  min-height:650px!important;
+  max-height:calc(100vh - 86px)!important;
+  padding:0!important;display:block!important;position:relative!important;overflow:hidden!important;
+  background:#050504 url("home-hero-makko.png") center bottom / 100% auto no-repeat!important;
+}
+body.home .cinema .building-photo,
+body.home .cinema .vignette,
+body.home .cinema .film-grain,
+body.home .cinema .hero-content,
+body.home .cinema .hero-emblem,
+body.home .cinema .hero-caption{display:none!important}
+body.home #header{background:rgba(5,5,4,.96)!important}
+@media(max-width:900px){
+ body.home .cinema{height:calc(100vw * .5625)!important;min-height:420px!important;max-height:none!important;background-size:auto 100%!important;background-position:center bottom!important}
+}
+@media(max-width:560px){
+ body.home .cinema{height:62vw!important;min-height:300px!important;background-size:auto 100%!important;background-position:center bottom!important}
+}
