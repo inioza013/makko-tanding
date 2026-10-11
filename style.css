@@ -959,3 +959,26 @@ header nav a.gold-link{min-height:40px;padding:10px 15px;border-radius:6px;white
 @media(prefers-reduced-motion:reduce){
  a.btn,.btn,button,input[type="button"],input[type="submit"],input[type="reset"],a[class*="button"],a[class*="-btn"],a.gold-link,.radar-item a,.field-gallery-link .under{transition:none}
 }
+
+
+/* GLOBAL NAVIGATION CONSISTENCY — identical layout and button treatment on every page */
+header{height:82px;padding:0 clamp(20px,4vw,64px);gap:24px}
+header .brand{flex:0 0 auto}
+header nav{display:flex;align-items:center;justify-content:flex-end;gap:clamp(10px,1.25vw,20px);flex:1;min-width:0;white-space:nowrap}
+header nav a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:8px 0;color:#d5d2ca;font-family:var(--sans);font-size:8px;font-weight:600;letter-spacing:1.25px;line-height:1.2;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid transparent;transition:color .2s ease,border-color .2s ease}
+header nav a:hover,header nav a.active{color:var(--gold2);border-bottom-color:rgba(234,210,139,.75)}
+header nav a.gold-link{padding:10px 13px;border:1px solid #a88942;color:var(--gold2);min-height:38px}
+header nav a.gold-link:hover{background:rgba(198,160,74,.12);border-color:var(--gold2)}
+@media(max-width:1280px){
+  header{height:74px;padding:0 5%}
+  header nav{display:none;position:absolute;top:74px;left:0;right:0;padding:18px 6% 24px;background:rgba(7,7,6,.98);backdrop-filter:blur(18px);flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;border-bottom:1px solid rgba(234,210,139,.2);box-shadow:0 18px 35px rgba(0,0,0,.28);max-height:calc(100vh - 74px);overflow:auto}
+  header.open nav{display:flex}
+  header nav a{width:100%;min-height:44px;justify-content:flex-start;padding:12px 0;font-size:9px;letter-spacing:1.6px;border-bottom:1px solid rgba(234,210,139,.1)}
+  header nav a.gold-link{width:max-content;max-width:100%;margin-top:10px;padding:12px 15px;border:1px solid #a88942}
+  #menu{display:grid;place-items:center;width:44px;height:44px;flex:0 0 44px;cursor:pointer}
+}
+@media(max-width:560px){
+  header{height:68px;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+  header nav{top:68px;padding:16px 20px max(18px,env(safe-area-inset-bottom));max-height:calc(100vh - 68px)}
+  header nav a{min-height:44px}
+}
