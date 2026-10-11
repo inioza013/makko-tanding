@@ -904,3 +904,31 @@ button:focus-visible,a:focus-visible{outline:3px solid #ead28b;outline-offset:4p
  nav .gold-link{width:auto;padding:12px 16px;margin-top:8px}
  #menu{display:block}
 }
+
+
+/* GLOBAL NAVIGATION REFINEMENT — consistent spacing across homepage and subpages */
+header{gap:clamp(12px,1.6vw,24px)}
+header .brand{flex:0 0 auto;min-width:0}
+header nav{flex:1 1 auto;min-width:0;justify-content:flex-end;gap:clamp(7px,.78vw,12px)}
+header nav a{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;line-height:1.35;font-size:clamp(7px,.57vw,8.5px);letter-spacing:clamp(.35px,.055vw,.8px);padding:10px 0}
+header nav .gold-link{padding:10px clamp(8px,.8vw,13px);margin-left:2px}
+@media(min-width:1281px){
+ header{padding-left:4%;padding-right:4%}
+}
+@media(min-width:901px) and (max-width:1280px){
+ header{padding:0 4%}
+ header nav{display:none;position:absolute;top:82px;left:0;right:0;padding:18px 5% 22px;background:rgba(7,7,6,.98);flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid #2c2a23;box-shadow:0 18px 35px rgba(0,0,0,.24)}
+ header.open nav{display:flex}
+ header nav a{width:100%;justify-content:flex-start;padding:13px 0;font-size:11px;letter-spacing:1px;border-bottom:1px solid rgba(234,210,139,.1)}
+ header nav .gold-link{width:max-content;padding:12px 16px;margin:10px 0 0;border:1px solid #a88942}
+ #menu{display:block;flex:0 0 auto}
+}
+@media(max-width:900px){
+ header nav{gap:0;align-items:stretch}
+ header nav a{justify-content:flex-start;white-space:normal;line-height:1.45;letter-spacing:1px;padding:13px 0;font-size:10px}
+ header nav .gold-link{width:max-content;max-width:100%;white-space:normal;padding:12px 15px;margin:10px 0 0}
+}
+@media(max-width:560px){
+ header nav a{font-size:10px;letter-spacing:.8px;padding:12px 0}
+ header nav .gold-link{padding:12px 14px;margin-top:9px}
+}
