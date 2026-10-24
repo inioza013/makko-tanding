@@ -15,7 +15,7 @@ const header=document.getElementById('header'),menu=document.getElementById('men
     var link=event.target.closest('a[href]');
     if(!link)return;
     var href=link.href||'';
-    if(!/wa\\.me\\/|api\\.whatsapp\\.com/i.test(href))return;
+    if(href.indexOf('wa.me/')===-1 && href.indexOf('api.whatsapp.com')===-1)return;
     window.gtag('event','whatsapp_click',{
       link_url:href,
       link_text:(link.innerText||link.getAttribute('aria-label')||'WhatsApp').trim().slice(0,100),
